@@ -1,6 +1,6 @@
 import * as fs from 'node:fs';
-import { CustomPropertyValuesUpdatedEvent } from '../types/custom-property-values.updated.js';
-import { CustomPropertyValuesFormat } from './CustomPropertyValues.js';
+import { CustomPropertyValuesUpdatedEvent } from '../types/custom-property-values.updated';
+import { CustomPropertyValuesFormat } from './CustomPropertyValues';
 
 const file = './test/fixtures/custom-property-values.updated.json';
 
