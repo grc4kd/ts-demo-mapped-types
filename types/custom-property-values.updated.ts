@@ -1,5 +1,7 @@
 type Features = {
     scanRepo: () => void;
+    framework: () => void;
+    haircut: () => void;
 }
 
 type CustomPropertyOptionsFlags<Type> = {

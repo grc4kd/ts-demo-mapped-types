@@ -5,16 +5,22 @@ class CustomPropertyValuesFormat {
     constructor(event) {
         this._scanRepoOld = "";
         this._scanRepoNew = "";
+        this._frameworkOld = "";
+        this._frameworkNew = "";
+        this._haircutOld = "";
+        this._haircutNew = "";
         this._scanRepoOld = event.old_values.scanRepo;
         this._scanRepoNew = event.new_values.scanRepo;
+        this._frameworkOld = event.old_values.framework;
+        this._frameworkNew = event.new_values.framework;
+        this._haircutOld = event.old_values.haircut;
+        this._haircutNew = event.new_values.haircut;
     }
     get oldValues() {
-        var _a;
-        return JSON.stringify([{ scanRepo: (_a = this._scanRepoOld) !== null && _a !== void 0 ? _a : 'false' }]);
+        return JSON.stringify([{ scanRepo: this._scanRepoOld, framework: this._frameworkOld, haircut: this._haircutOld }]);
     }
     get newValues() {
-        var _a;
-        return JSON.stringify([{ scanRepo: (_a = this._scanRepoNew) !== null && _a !== void 0 ? _a : null }]);
+        return JSON.stringify([{ scanRepo: this._scanRepoNew, framework: this._frameworkNew, haircut: this._haircutNew }]);
     }
 }
 exports.CustomPropertyValuesFormat = CustomPropertyValuesFormat;

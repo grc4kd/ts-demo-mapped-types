@@ -1,13 +1,13 @@
 {
     "action": "updated",
-    "old_values": [
-        {
-            "scan_repo": "true"
-        }
-    ],
-    "new_values": [
-        {
-            "scan_repo": null
-        }
-    ]
+    "old_values": {
+        "scan_repo": "true",
+        "framework": "default",
+        "haircut": "false"
+    },
+    "new_values": {
+        "scan_repo": null,
+        "framework": "ILE",
+        "haircut": "yes"
+    }
 }
