@@ -9,12 +9,12 @@ export class CustomPropertyValuesFormat {
     private _haircutNew = "";
 
     constructor(event: CustomPropertyValuesUpdatedEvent) {
-        this._scanRepoOld = event.old_values.scanRepo;
-        this._scanRepoNew = event.new_values.scanRepo;
-        this._frameworkOld = event.old_values.framework;
-        this._frameworkNew = event.new_values.framework;
-        this._haircutOld = event.old_values.haircut;
-        this._haircutNew = event.new_values.haircut;
+        this._scanRepoOld = event.old_values.scanRepo ?? 'false';
+        this._scanRepoNew = event.new_values.scanRepo ?? 'false';
+        this._frameworkOld = event.old_values.framework ?? 'false';
+        this._frameworkNew = event.new_values.framework ?? 'false';
+        this._haircutOld = event.old_values.haircut ?? 'false';
+        this._haircutNew = event.new_values.haircut ?? 'false';
     }
 
     public get oldValues() {
