@@ -9,8 +9,8 @@ export class CustomPropertyValuesFormat {
     private _haircutNew = "";
 
     constructor(event: CustomPropertyValuesUpdatedEvent) {
-        this._scanRepoOld = event.old_values.scanRepo ?? 'false';
-        this._scanRepoNew = event.new_values.scanRepo ?? 'false';
+        this._scanRepoOld = event.old_values.scan_repo ?? 'false';
+        this._scanRepoNew = event.new_values.scan_repo ?? 'false';
         this._frameworkOld = event.old_values.framework ?? 'false';
         this._frameworkNew = event.new_values.framework ?? 'false';
         this._haircutOld = event.old_values.haircut ?? 'false';

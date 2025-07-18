@@ -1,5 +1,5 @@
 type Features = {
-    scanRepo: () => void;
+    scan_repo: () => void;
     framework: () => void;
     haircut: () => void;
 }
